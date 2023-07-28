@@ -1,5 +1,5 @@
 <template>
-  <h1>Header</h1>
+  <Header/>
   <div>
     <NuxtPage/>
   </div>
