@@ -11,7 +11,9 @@ import { ref } from 'vue';
 
 export default {
     setup() {
-        searchField = ref(null)
+        definePageMeta({
+          layout : 'page'
+        })
     },
 
   mounted() {

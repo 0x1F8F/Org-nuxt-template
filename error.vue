@@ -1,20 +1,28 @@
 <template>
-    <div class=" fixed flex h-screen items-center justify-center md:mx-[23%] animate-pulse sm:mx-[1%]">
-        <h1 class=" text-black opacity-10 md:text-[30rem] sm:text-[20rem] lg:text-[30rem]">{{ route.statusCode  }}</h1>
+    <div class=" fixed flex h-screen items-center justify-center md:mx-[23%] animate-pulse">
+        <h1 class=" text-black opacity-10 text-[15rem] md:text-[30rem]">{{ route.statusCode  }}</h1>
     </div>
     <div class="flex flex-col h-screen items-center justify-center flex-wrap mx-[30%] ">
         <h1 class=" text-black font-semibold">
             Error: <span class=" text-red-500">{{ route.statusCode }}</span>
         </h1>
+        <p class=" flex-wrap" v-if="route.statusCode >= 500">
+            {{ route.url }}
+        </p>
         <p class=" flex-wrap">
-            {{ route.statusMessage }}
+            {{ route.message }}
         </p>
     </div>
     
 </template>
 
-<script setup>
-const route = useError()
+<script>
+export default{
+    setup() {
+        const route = useError();
+        return { route }
+    }
+}
 </script>
 
 <style>

@@ -1,6 +1,12 @@
 <template>
-  <Header/>
-  <div>
+  <NuxtLayout>
     <NuxtPage/>
-  </div>
+  </NuxtLayout>
 </template>
+
+<script>
+definePageMeta({
+  layout : 'page',
+})
+</script>
+
