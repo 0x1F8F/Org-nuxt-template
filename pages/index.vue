@@ -6,34 +6,12 @@
 </template>
   
 
-<script>
-import { ref } from 'vue';
-
+<script lang="ts">
 export default {
     setup() {
         definePageMeta({
           layout : 'page'
         })
     },
-
-  mounted() {
-    window.addEventListener('keydown', this.handleGlobalKeyDown);
-  },
-
-
-  beforeDestroy() {
-    window.removeEventListener('keydown', this.handleGlobalKeyDown);
-  },
-
-
-  methods: {
-    handleGlobalKeyDown(event) {
-      if (event.key === '/') {
-        console.log('Specific character "A" pressed globally.');
-      }
-    }
-  }
-
-
 };
 </script>

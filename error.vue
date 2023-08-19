@@ -1,5 +1,5 @@
 <template>
-    <div class=" fixed flex h-screen items-center justify-center md:mx-[23%] animate-pulse">
+    <div class=" grid fixed h-screen w-screen place-content-center animate-pulse">
         <h1 class=" text-black opacity-10 text-[15rem] md:text-[30rem]">{{ route.statusCode  }}</h1>
     </div>
     <div class="flex flex-col h-screen items-center justify-center flex-wrap mx-[30%] ">

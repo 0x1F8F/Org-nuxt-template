@@ -1,10 +1,12 @@
 <template>
     <h1>
-        About page
+        <About/>
     </h1>
 </template>
 
 <script setup>
+import About from '@/components/About.vue';
+
 definePageMeta({
     layout : 'page',
 })
