@@ -1,6 +1,5 @@
 <template>
     <div>
-        <video src="/bg.mp4" autoplay muted loop class=" absolute h-screen w-full object-cover"></video>
         <LoginDialog1/>
     </div>
 </template>

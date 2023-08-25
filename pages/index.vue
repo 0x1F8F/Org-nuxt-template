@@ -1,7 +1,19 @@
 <template>
-    <h1>r</h1>
-    <div>
-        <input ref="searchField" type="text" />
+    <div class=" mx-[20%]">
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
+        <SegmentsMoto/>
     </div>
 </template>
   
