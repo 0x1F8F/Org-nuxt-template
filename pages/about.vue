@@ -1,6 +1,9 @@
 <template>
     <h1>
         <About/>
+        <About/>
+        <About/>
+        <About/>
     </h1>
 </template>
 
@@ -8,6 +11,6 @@
 import About from '@/components/About.vue';
 
 definePageMeta({
-    layout : 'page',
+    layout : 'pagealt',
 })
 </script>

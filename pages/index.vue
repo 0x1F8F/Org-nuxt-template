@@ -1,7 +1,9 @@
 <template>
-    <div class=" h-screen">
-        <Header class="w-screen top-0 backdrop-blur-sm backdrop:opacity-20"/>
-        <div class=" mx-[20%]">
+    <div class="">
+        <div class="">
+            <SegmentsMoto/>
+            <SegmentsMoto/>
+            <SegmentsMoto/>
             <SegmentsMoto/>
         </div>
     </div>
@@ -13,7 +15,7 @@
 export default {
     setup() {
         definePageMeta({
-          layout : false
+          layout : "page"
         })
     },
 };
