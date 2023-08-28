@@ -1,20 +1,11 @@
 <template>
-    <div class=" mx-[20%]">
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
-        <SegmentsMoto/>
+    <div class=" h-screen">
+        <Header class="w-screen top-0 backdrop-blur-sm backdrop:opacity-20"/>
+        <div class=" mx-[20%]">
+            <SegmentsMoto/>
+        </div>
     </div>
+    
 </template>
   
 
@@ -22,7 +13,7 @@
 export default {
     setup() {
         definePageMeta({
-          layout : 'page'
+          layout : false
         })
     },
 };
