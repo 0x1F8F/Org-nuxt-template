@@ -11,7 +11,10 @@
                 <h1 class=" font-mono text-4xl font-semibold py-5"><span class=" bg-teal-500 text-white">L</span>ogin</h1>
                 <input v-model="field.uname" type="text" placeholder="Username or Email" class="inputField">
                 <input v-model="field.passwd" type="password" placeholder="Password" class="inputField">
-                <NuxtLink to="/auth/recover/fgp1"><p class=" p-3 text-1 hover:underline">Forget password?</p></NuxtLink>
+                <div class="flex flex-row">
+                    <NuxtLink to="/auth/recover/fgp1"><p class=" p-3 text-sm hover:underline">Forget Password</p></NuxtLink>
+                    <NuxtLink to="/auth/signin"><p class=" p-3 text-sm hover:underline">Create Account</p></NuxtLink>
+                </div>
                 <input type="submit" value="Login" class=" bg-black text-white rounded-md shadow-md px-3 py-2" >
             </form>
         </div>

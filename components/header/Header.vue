@@ -14,7 +14,7 @@
             </NuxtLink>
         </div>
         <div>
-            <button class="button" @click="navigateTo('/auth/signin')">Sign up</button>
+            <button class="buttonStoke" @click="navigateTo('/auth/signin')">Sign up</button>
             <button class="button" @click="navigateTo('/auth/login')">Login</button>
         </div>
     </div>
@@ -22,7 +22,10 @@
 
 <style>
 .button {
-    @apply p-2 bg-black text-white rounded-md shadow-md mx-1 text-sm;
+    @apply p-2 bg-black text-white rounded-md shadow-md mx-1 text-sm border-[2px] border-black;
+}
+.buttonStoke {
+    @apply p-2 bg-white text-black rounded-md shadow-md mx-1 text-sm border-[2px] border-black;
 }
 </style>
 

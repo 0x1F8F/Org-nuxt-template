@@ -12,7 +12,7 @@
                 <input v-model="field.email" type="email" placeholder="Email Address" class="inputField">
                 <input v-model="field.passwd" type="password" placeholder="Password" class="inputField">
                 <input v-model="field.passwd1" type="password" placeholder="Re-type" class="inputField">
-                <NuxtLink to="/auth/recover/fgp1"><p class=" p-3 text-1 hover:underline">Already have an account?</p></NuxtLink>
+                <NuxtLink to="/auth/login"><p class=" p-3 text-1 hover:underline">Already have an account?</p></NuxtLink>
                 <input type="submit" value="Create" class=" bg-black text-white rounded-md shadow-md px-3 py-2" >
             </form>
         </div>
